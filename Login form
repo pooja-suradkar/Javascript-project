@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    .box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h3>Enter Details</h3>
+    <input id="name" placeholder="Your Name">
+    <input id="email" placeholder="Your Email">
+    <button onclick="submitForm()">Submit</button>
+    <p id="result"></p>
+  </div>
+
+  <script>
+    function submitForm(){
+      let n = document.getElementById("name").value;
+      let e = document.getElementById("email").value;
+      document.getElementById("result").innerText = "Name: " + n + " | Email: " + e;
+    }
+  </script>
+</body>
+</html￼Enter
